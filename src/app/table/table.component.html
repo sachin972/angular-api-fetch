@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td>Employee Name</td>
+        <td>Entry Notes</td>
+        <td>Start Time UTC</td>
+        <td>End Time UTC</td>
+    </tr>
+    <tr *ngFor="let el of data">
+        <td>
+            {{el.EmployeeName}}
+        </td>
+        <td>
+            {{el.EntryNotes}}
+        </td>
+        <td>
+            {{el.StarTimeUtc | date:'medium'}}
+        </td>
+        <td>
+            {{el.EndTimeUtc | date:'medium'}}
+        </td>
+    </tr>
+</table>
